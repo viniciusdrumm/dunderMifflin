@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Dunder Mifflin</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Dunder Mifflin">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="#">Colaboradores</a></li>
+                <li><a href="#">Documentário</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="icon">
+            <div class="user-icon">
+                <img src="images/user-icon.png" alt="Ícone do Usuário">
+            </div>
+            <div class="cart-icon" id="cart-icon">
+                <img src="images/cart-icon.png" alt="Carrinho de Compras">
+                <div id="cart-dropdown">
+                    <div id="cart-items"></div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!--SLIDESHOW-->
+
+        <div class="slider">
+            <div class="slides">
+                <!--Radio Buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <!--Slide images-->
+                <div class="slide first">
+                    <img src="images/banner1.png" alt="banner1">
+                    <div class="banner-button1">
+                        <button>Leia Mais</button>
+                        <button>Fale Conosco</button>
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <img src="images/banner2.png" alt="banner2">
+                    <div class="banner-button2">
+                        <button>Veja Mais</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner3.png" alt="banner3">
+                </div>
+
+                <!--Navigation auto-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- <section class="banner">
+            <img src="images/banner1.png" alt="Banner Principal">
+            <div class="banner-text"></div>
+            <div class="banner-button">
+                <button>Leia Mais</button>
+                <button>Fale Conosco</button>
+            </div>
+        </section> -->
+
+        <section class="about">
+            <div class="about-item">
+                <img src="images/penn-paper.png" alt="Scranton">
+                <p>A Dunder Mifflin é uma empresa de papel sediada em Scranton, Pensilvânia, Estados Unidos.</p>
+            </div>
+            <div class="about-item">
+                <img src="images/products.jpg" alt="Produtos">
+                <p>Vendemos produtos de papel e fornecemos serviços de distribuição de papel para pequenas e médias
+                    empresas. <a href="#">Veja mais.</a></p>
+            </div>
+            <div class="about-item">
+                <img src="images/theoffice.jpg" alt="The Office">
+                <p>A Dunder Mifflin se tornou conhecida por seu ambiente de trabalho peculiar e seus funcionários
+                    excêntricos, sendo o cenário principal do documentário norte-americano "The Office".</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Dunder Mifflin">
+            </div>
+            <div class="footer-links">
+                <div>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Nossa História</a></li>
+                        <li><a href="#">Colaboradores</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="#">Nosso Catálogo</a></li>
+                        <li><a href="#">Documentário</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Suporte ao Cliente</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Política de Privacidade</p>
+            <p>Contrato de Licença</p>
+            <p>© DUNDER MIFFLIN, all rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
