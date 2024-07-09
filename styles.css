@@ -92,7 +92,7 @@ nav ul li a:hover {
 
 .slides {
     width: 300%;
-    height: 550px;
+    height: 500px;
     display: flex;
 }
 
@@ -103,17 +103,52 @@ nav ul li a:hover {
 .slide {
     width: 34%;
     position: relative;
+    transition: 1s;
 }
 
 .slide img {
     width: 100%;
-    height: 550px;
+    height: 100%;
+    
 }
+
+.banner-button {
+    position: relative;
+    left: 140px;
+    top: -140px;
+    
+}
+
+.banner-button a {
+    position: relative; /* adicionado */
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #594A3C;
+    cursor: pointer;
+    z-index: 1;
+    margin-right: 15px;
+
+}
+
+.banner-button a:hover {
+    background: #fff !important;
+    color: #26241E !important;
+    border-radius: 10px;
+    border: solid 2px #26241E !important;
+    
+}
+
+
 
 .manual-navigation {
     position: absolute;
     width: 100%;
-    margin-top: -40px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -124,7 +159,7 @@ nav ul li a:hover {
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-    margin-top: 35%;
+    margin-top: 28.5%;
 }
 
 .manual-btn:not(:last-child) {
@@ -158,7 +193,7 @@ nav ul li a:hover {
 .navigation-auto {
     position: absolute;
     width: 100%;
-    margin-top: 32.4%;
+    margin-top: 29.8%;
     display: flex;
     justify-content: center;
 }
@@ -180,101 +215,14 @@ nav ul li a:hover {
     
 }
 
-.banner-button1 {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-    transform: translate(-50%, -30%);
-    text-align: center;
-}
-
-.banner-button1 button {
-    background: #594A3C;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 20px;
-    font-weight:bold;
-    width: 150px;
-    height: 45px;
-
-}
-
-.banner-button1 button:hover {
-    background: #ffffff;
-    color: #26241E;
-    border: solid 2px;
-    border-color:#26241E;
-    font-weight: bolder;
-}
-
-.banner-button2 {
-    position: absolute;
-    top: 85%;
-    left: 14%;
-    transform: translate(-50%, -30%);
-    text-align: center;
-}
-
-.banner-button2 button {
-    background: #594A3C;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 20px;
-    font-weight:bold;
-    width: 150px;
-    height: 45px;
-}
-
-.banner-button2 button:hover {
-    background: #ffffff;
-    color: #26241E;
-    border: solid 2px;
-    border-color:#26241E;
-    font-weight: bolder;
-}
-
-.banner-button3 {
-    position: absolute;
-    top: 85%;
-    left: 14%;
-    transform: translate(-50%, -30%);
-    text-align: center;
-}
-
-.banner-button3 button {
-    background: #594A3C;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 20px;
-    font-weight:bold;
-    width: 150px;
-    height: 45px;
-}
-
-.banner-button3 button:hover {
-    background: #ffffff;
-    color: #26241E;
-    border: solid 2px;
-    border-color:#26241E;
-    font-weight: bolder;
-}
 
 /* FIM SLIDESHOW */
 
 .about {
-    padding: 50px 0px 30px 0px;
+    padding: 50px 0px 100px 0px;
     display: flex;
     flex-direction:column;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
     width: 100%;
 }
