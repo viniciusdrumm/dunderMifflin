@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 header {
@@ -13,7 +14,7 @@ header {
     background: #26241E;
     color: #fff;
     padding: 10px 20px;
-    height: 60px;
+    height: 80px;
 }
 
 header .logo img {
@@ -37,8 +38,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffffff;
-    font-weight: bold;
+    
+    color: #fff;
+    text-decoration: underline;
 }
 
 
@@ -77,48 +79,7 @@ nav ul li a:hover {
 
  Função do ícone do carrinho   */ 
 
-/* .banner {                        banner e botão
-    position: relative;
-    text-align: center;
-    color: #fff;
-}
-
-.banner img {
-    width: 100%;
-    height: 550px;
-}
-
-.banner-button {
-    position: absolute;
-    top: 85%;
-    left: 19%;
-    transform: translate(-50%, -30%);
-    text-align: center;
-}
-
-.banner-button button {
-    background: #594A3C;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    border: solid 1px;
-    border-color:#ffffff;
-    border-radius: 20px;
-    font-weight:bold;
-    width: 150px;
-    height: 45px;
-
-}
-
-.banner-button button:hover {
-    background: #ffffff;
-    color: #26241E;
-    border: solid 2px;
-    border-color:#26241E;
-    font-weight: bolder;
-} */
+/* 
 
 /* SLIDESHOW */
 
@@ -241,6 +202,14 @@ nav ul li a:hover {
 
 }
 
+.banner-button1 button:hover {
+    background: #ffffff;
+    color: #26241E;
+    border: solid 2px;
+    border-color:#26241E;
+    font-weight: bolder;
+}
+
 .banner-button2 {
     position: absolute;
     top: 85%;
@@ -260,38 +229,100 @@ nav ul li a:hover {
     font-weight:bold;
     width: 150px;
     height: 45px;
+}
 
+.banner-button2 button:hover {
+    background: #ffffff;
+    color: #26241E;
+    border: solid 2px;
+    border-color:#26241E;
+    font-weight: bolder;
+}
+
+.banner-button3 {
+    position: absolute;
+    top: 85%;
+    left: 14%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+}
+
+.banner-button3 button {
+    background: #594A3C;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight:bold;
+    width: 150px;
+    height: 45px;
+}
+
+.banner-button3 button:hover {
+    background: #ffffff;
+    color: #26241E;
+    border: solid 2px;
+    border-color:#26241E;
+    font-weight: bolder;
 }
 
 /* FIM SLIDESHOW */
 
 .about {
-    padding: 50px 20px;
+    padding: 50px 0px 30px 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     gap: 20px;
+    align-items: center;
+    width: 100%;
 }
 
 .about-item {
     background: #DAD9D5;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    width: 80%;
+    width: 82%;
     height: 450px;
+    flex-direction:row;
 }
+
 
 .about-item img {
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     height: auto;
-    margin-bottom: 10px;
 }
 
-.about-item p {
-    max-width: 800px;
+.about-text {
+    max-width: 100%;
+    background-color: #fff;
+    color: black;
+    font-size:28px;
+    text-align: start;
+    align-items: center;
+    padding: 65px 10px 0 10px;
+    margin: 100px 0 100px 0;
 }
+
+.about-text a {
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+.about-text2 {
+    max-width: 100%;
+    background-color: #fff;
+    color: black;
+    font-size:28px;
+    text-align: start;
+    align-items: center;
+    padding: 35px 10px 0 10px;
+    margin: 100px 0 100px 0;
+}
+
 
 .footer-content {
     display: flex;
