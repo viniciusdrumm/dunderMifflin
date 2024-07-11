@@ -20,31 +20,46 @@ function nextImage(){
 
 // Função Carrinho de compras
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const cartIcon = document.getElementById('cart-icon');
-//     const cartDropdown = document.getElementById('cart-dropdown');
-//     const addToCartButtons = document.querySelectorAll('.add-to-cart');
-//     const cartItemsContainer = document.getElementById('cart-items');
-//     let cartItems = [];
+document.addEventListener('DOMContentLoaded', function() {
+    const cartIcon = document.getElementById('cart-icon');
+    const cartDropdown = document.getElementById('cart-dropdown');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartItemsContainer = document.getElementById('cart-items');
+    let cartItems = [];
 
-//     cartIcon.addEventListener('click', () => {
-//         cartDropdown.style.display = cartDropdown.style.display === 'block' ? 'none' : 'block';
-//     });
-// 19
-//     addToCartButtons.forEach(button => {
-//         button.addEventListener('click', (event) => {
-//             const productName = event.target.getAttribute('data-product');
-//             cartItems.push(productName);
-//             updateCart();
-//         });
-//     });
+    cartIcon.addEventListener('click', () => {
+        cartDropdown.style.display = cartDropdown.style.display === 'block' ? 'none' : 'block';
+    });
 
-//     function updateCart() {
-//         cartItemsContainer.innerHTML = '';
-//         cartItems.forEach(item => {
-//             const div = document.createElement('div');
-//             div.textContent = item;
-//             cartItemsContainer.appendChild(div);
-//         });
-//     }
-// });
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            const productName = event.target.getAttribute('data-product');
+            cartItems.push(productName);
+            updateCart();
+        });
+    });
+
+    function updateCart() {
+        cartItemsContainer.innerHTML = '';
+        cartItems.forEach(item => {
+            const div = document.createElement('div');
+            div.textContent = item;
+            cartItemsContainer.appendChild(div);
+        });
+    }
+
+    function addItemToCart(product) {
+        cartItems.push(product);
+        renderCartItems();
+    }
+
+    function renderCartItems() {
+        cartItemsContainer.innerHTML = '';
+        cartItems.forEach((item, index) => {
+            const cartItem = document.createElement('div');
+            cartItem.className = 'cart-item';
+            cartItem.textContent = `${item} - Quantidade: 1`;
+            cartItemsContainer.appendChild(cartItem);
+        });
+    }
+});
