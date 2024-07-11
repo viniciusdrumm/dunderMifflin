@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Dunder Mifflin</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Dunder Mifflin">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="#">Colaboradores</a></li>
+                <li><a href="#">Documentário</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="icon">
+            <div class="user-icon">
+                <img src="images/user-icon.png" alt="Ícone do Usuário">
+            </div>
+            <div class="cart-icon" id="cart-icon">
+                <img src="images/cart-icon.png" alt="Carrinho de Compras">
+                <div id="cart-dropdown">
+                    <div id="cart-items"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <h1>Produtos</h1>
+
+            <h2>Copy Paper</h2>
+            <div class="product-carousel">
+                <div class="product-card">
+                    <img src="images/paper1.png" alt="Papel Sulfite A4 Branco 75g">
+                    <p>Papel Sulfite A4 Branco 75g<br>500 Folhas - Dunder Mifflin</p>
+                    <p class="price">R$35,00</p>
+                    <button class="add-to-cart" data-product="Papel Sulfite A4 Branco 75g">Adicionar 🛒</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/paper2.png" alt="Papel Sulfite A5 Branco 200g">
+                    <p>Papel Sulfite A5 Branco 200g<br>500 Folhas - Dunder Mifflin</p>
+                    <p class="price">R$40,00</p>
+                    <button class="add-to-cart" data-product="Papel Sulfite A5 Branco 200g">Adicionar 🛒</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/paper3.png" alt="Papel Sulfite A4 Reciclado 75g">
+                    <p>Papel Sulfite A4 Reciclado 75g<br>500 Folhas - Dunder Mifflin</p>
+                    <p class="price">R$30,00</p>
+                    <button class="add-to-cart" data-product="Papel Sulfite A4 Reciclado 75g">Adicionar 🛒</button>
+                </div>
+            </div>
+
+            <h2>Outros Produtos</h2>
+            <div class="product-carousel">
+                <div class="product-card">
+                    <img src="images/shirt_Halloween.png" alt="Camiseta 'Halloween'">
+                    <p>Camiseta "Halloween"<br>- Dwight Schrute</p>
+                    <p class="price">R$99,90</p>
+                    <button class="add-to-cart" data-product="Camiseta 'That's what she said'">Adicionar 🛒</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/shirt_Nooo.png" alt="Camiseta 'I am dead inside'">
+                    <p>Camiseta "Nooo, Please, God."<br>- Michael Scott</p>
+                    <p class="price">R$99,90</p>
+                    <button class="add-to-cart" data-product="Camiseta 'I am dead inside'">Adicionar 🛒</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/mug.png" alt="Caneca 'World's best boss'">
+                    <p>Caneca "World's best boss"<br>- Michael Scott</p>
+                    <p class="price">R$45,00</p>
+                    <button class="add-to-cart" data-product="Caneca 'World's best boss'">Adicionar 🛒</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Dunder Mifflin">
+            </div>
+            <div class="footer-links">
+                <div>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Nossa História</a></li>
+                        <li><a href="#">Colaboradores</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="#">Nosso Catálogo</a></li>
+                        <li><a href="#">Documentário</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Suporte ao Cliente</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Política de Privacidade</p>
+            <p>Contrato de Licença</p>
+            <p>© DUNDER MIFFLIN, all rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
