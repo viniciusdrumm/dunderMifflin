@@ -1,4 +1,4 @@
-//SlideShow//
+//SlideShow home //
 
 let count = 1;
 document.getElementById("radio1").checked = "true";
@@ -63,3 +63,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+

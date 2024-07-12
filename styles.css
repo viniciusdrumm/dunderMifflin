@@ -116,7 +116,7 @@ nav ul li a:hover {
 }
 
 .banner-button a {
-    position: relative; /* adicionado */
+    position: relative;
     display: inline-block;
     padding: 12px 30px;
     color: #fff;
@@ -128,12 +128,13 @@ nav ul li a:hover {
     cursor: pointer;
     z-index: 1;
     margin-right: 15px;
+    transition: background-color 0.3s;
 
 }
 
 .banner-button a:hover {
-    background: #fff !important;
-    color: #26241E !important;
+    background-color: #26241E !important;
+    color: #fff !important;
     border-radius: 10px;
     border: solid 2px #26241E !important;
     
@@ -251,9 +252,23 @@ nav ul li a:hover {
 }
 
 .about-text a {
-    font-size: 18px;
+    font-size: 15px;
     text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    background: #594A3C;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    padding: 8px 8px;
     
+}
+
+.about-text a:hover{
+    background-color: #26241E !important;
+    color: #fff !important;
+    border-radius: 10px;
+    border: solid 2px #26241E !important;
+
 }
 
 .about-text2 {
@@ -324,21 +339,31 @@ nav ul li a:hover {
 
 /*----------------------------PÁGINA PRODUTOS----------------------------------*/
 
-/* Produtos Page Styles */
+/* Produtos Styles */
 .products {
-    padding: 50px 100px;
+    padding: 50px 150px;
 }
 
 .products h1, .products h2 {
     text-align: start;
     margin-bottom: 20px;
+    background-color: #DAD9D5;
+    width: 250px;
+    padding: 10px 30px;
 }
 
-.product-carousel {
+.product-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    
+}
+
+ .product-carousel {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .product-card {
@@ -350,6 +375,11 @@ nav ul li a:hover {
     margin: 10px;
     text-align: center;
     padding: 20px;
+    
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .product-card img {
