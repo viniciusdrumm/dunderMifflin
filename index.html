@@ -30,6 +30,7 @@
                 <img src="images/cart-icon.png" alt="Carrinho de Compras">
                 <div id="cart-dropdown">
                     <div id="cart-items"></div>
+                    <button id="go-to-cart">Ir para o Carrinho</button>
                 </div>
             </div>
         </div>
@@ -63,10 +64,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="images/banner3.png" alt="banner3">
-                    <div class="banner-button">
-                        <a href="#">Veja Mais</a>
-                    </div>
+                    <a href="#"><img src="images/banner3.png" alt="banner3"></a>
                 </div>
 
                 <!--Navigation auto-->
@@ -84,20 +82,46 @@
             </div>
         </div>
 
-        <section class="about">
-            <div class="about-item">
-                <img src="images/penn-paper.png" alt="Scranton">
-                <p class="about-text">A Dunder Mifflin é uma empresa de papel sediada em Scranton, Pensilvânia, Estados Unidos.</p>
+        <section class="home-products">
+            <h2>O que os vendedores da Dunder Mifflin oferecerão a você?</h2>
+            <div class="home-product-list">
+                <div class="home-product-card">
+                    <img src="./images/paper1.png" alt="Produto 1">
+                    <p>500 Folhas - Papel A4</p>
+                </div>
+                <div class="home-product-card">
+                    <img src="./images/paper2.png" alt="Produto 2">
+                    <p>500 Folhas - Papel A5</p>
+                </div>
+                <div class="home-product-card">
+                    <img src="./images/paper3.png" alt="Produto 3">
+                    <p>500 Folhas - Reciclado A4</p>
+                </div>
             </div>
-            <div class="about-item">
-                <img src="images/produtos.png" alt="Produtos">
-                <p class="about-text">Vendemos produtos de papel e fornecemos serviços de distribuição de papel para pequenas e médias
-                    empresas. <br><br><a href="./produtos.html">Veja mais > </a></p>
+            <p>Para outros produtos: <a href="produtos.html" class="see-more"> Veja mais ></a></p>
+
+        </section>
+        <hr size="5" class="home-hr">
+        <section class="team">
+            <h2>Quem somos</h2>
+            <div class="team-content">
+                <img src="./images/penn-paper.png" alt="Nosso Time">
+                <p>A Dunder Mifflin é uma empresa de papel sediada em Scranton, Pensilvânia, Estados
+                    Unidos. <br><br> <a href="#" class="btn-secondary">Fale conosco ></a></p>
+
+
             </div>
-            <div class="about-item">
-                <img src="images/theoffice.png" alt="The Office">
-                <p class="about-text2">A Dunder Mifflin se tornou conhecida por seu ambiente de trabalho peculiar e seus funcionários
-                    excêntricos, sendo o cenário principal do documentário norte-americano "The Office".</p>
+        </section>
+        <hr size="5" class="home-hr">
+        <section class="documentary">
+            <h2>Documentário</h2>
+            <div class="documentary-content">
+                <img src="./images/theoffice.png" alt="Documentário">
+                <p>A Dunder Mifflin se tornou conhecida por seu ambiente de trabalho peculiar e seus
+                    funcionários excêntricos, sendo o cenário principal do documentário norte-americano "The Office".
+                    <br><br> <a href="#" class="btn-secondary">Veja mais ></a>
+                </p>
+
             </div>
         </section>
     </main>
@@ -139,6 +163,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="produtos.js"></script>
 </body>
 
 </html>

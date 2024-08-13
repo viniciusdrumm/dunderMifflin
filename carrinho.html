@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Dunder Mifflin</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Dunder Mifflin">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="#">Colaboradores</a></li>
+                <li><a href="#">Documentário</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="icon">
+            <div class="user-icon">
+                <img src="images/user-icon.png" alt="Ícone do Usuário">
+            </div>
+            <div class="cart-icon">
+                <img src="images/cart-icon.png" alt="Carrinho de Compras">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart">
+            <h1>Carrinho de <span class="highlight">Compras</span></h1>
+            <hr size="5" class="cart-hr">
+
+            <!-- Aqui os itens do carrinho serão inseridos dinamicamente -->
+            <div id="cart-items-container"></div>
+
+            <div class="cart-summary">
+                <div class="shipping-calculator">
+                    <p>Frete e Prazos:</p>
+                    <input type="text" id="cep" placeholder="CEP">
+                    <button id="calculate-shipping">Calcular</button>
+                </div>
+                <div class="subtotal">
+                    <p>Subtotal (<span id="total-items">0</span> produtos): <span id="subtotal-amount">R$0,00</span></p>
+                </div>
+                <button id="checkout-button">Fechar Pedido</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Dunder Mifflin">
+            </div>
+            <div class="footer-links">
+                <div>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Nossa História</a></li>
+                        <li><a href="#">Colaboradores</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="#">Nosso Catálogo</a></li>
+                        <li><a href="#">Documentário</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Suporte ao Cliente</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Política de Privacidade</p>
+            <p>Contrato de Licença</p>
+            <p>© DUNDER MIFFLIN, all rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="./carrinho.js"></script>
+
+</body>
+
+</html>
