@@ -19,19 +19,23 @@ Modal de informações para detalhes adicionais dos produtos.
 
 
 Tecnologias Utilizadas:
-HTML/CSS: Estrutura e estilização da interface do usuário.
-JavaScript: Manipulação dinâmica do DOM, gerenciamento do carrinho de compras e interação com o usuário.
-LocalStorage: Armazenamento persistente dos dados do carrinho de compras no navegador.
+
+* HTML/CSS: Estrutura e estilização da interface do usuário.
+* JavaScript: Manipulação dinâmica do DOM, gerenciamento do carrinho de compras e interação com o usuário.
+* LocalStorage: Armazenamento persistente dos dados do carrinho de compras no navegador.
 
 
 Diferenciais:
+
 Experiência de Usuário: Foco em uma interface intuitiva e responsiva, garantindo uma experiência agradável ao explorar e comprar produtos.
 
 Aproximação Temática: O projeto reforça o engajamento com fãs da série "The Office" ao oferecer produtos temáticos em um ambiente que remete ao universo da série.
 
 
 Possíveis Expansões Futuras:
-Integração com APIs de pagamento e cálculo de frete.
-Implementação de um sistema de autenticação de usuários para histórico de compras.
-Funcionalidades adicionais como cupons de desconto e wishlist.
+* Integração com APIs de pagamento e cálculo de frete.
+* Implementação de um sistema de autenticação de usuários para histórico de compras.
+* Funcionalidades adicionais como cupons de desconto e wishlist.
+
+
 Este projeto demonstra a capacidade de construir uma aplicação web completa e funcional, com foco na usabilidade e na satisfação do usuário.
